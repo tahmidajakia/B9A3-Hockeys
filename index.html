@@ -1,21 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockeys</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- manrope google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+        <style>
+            .font-manrope{
+                font-family: 'Manrope', sans-serif;
+            }
+        </style>
 </head>
-<body>
-    <header>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, aperiam.</p>
 
+<body>
+    <header class="max-w-[1170px] mx-5 lg:mx-auto font-manrope">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl">Hockey’s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="text-red-500"><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end space-x-5">
+                    <img class="hidden lg:block" src="Images/Frame.svg" alt="">
+                    <a class="py-4 px-5 rounded-md bg-red-500 text-white">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+        <!-- start hero setion -->
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="Images/1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle bg-black text-white border-none">❮</a>
+                    <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="Images/4.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle  bg-black text-white border-none">❮</a>
+                    <a href="#slide1" class="btn btn-circle  bg-black text-white border-none">❯</a>
+                </div>
+            </div>
+        </div>
+        <!-- end hero setion -->
     </header>
-    <main>
+    <main class="max-w-[1170px] mx-5 lg:mx-auto font-manrope mt-20">
+        <section class="text-center justify-center items-center border-t-2 border-b-2 border-gray-300 p-9 border-dotted ">
+            <h1 class="text-4xl text-black font-extrabold">Professional Hockeys Club</h1>
+            <p class="text-base font-medium pt-6 w-3/2 lg:w-1/2 text-center mx-auto">The Toronto Professional Hockey Club was a professional ice hockey team in Toronto, Ontario, Canada. </p>
+        </section>
+        <section class="grid grid-cols-1 lg:grid-cols-4 text-center mt-16 mb-16">
+            <div class="space-y-6">
+                <div class="radial-progress" style="--value:87;" role="progressbar">87%</div>
+                <h3>Prayer Facility</h3>
+                <p class="w-2/2">The University provides a number of dedicated spaces for prayer and reflection on campus.</p>
+            </div>
+            <div class="space-y-6">
+                <div class="radial-progress" style="--value:87;" role="progressbar">87%</div>
+                <h3>Prayer Facility</h3>
+                <p class="w-2/2">The University provides a number of dedicated spaces for prayer and reflection on campus.</p>
+            </div>
+            <div class="space-y-6">
+                <div class="radial-progress" style="--value:87;" role="progressbar">87%</div>
+                <h3>Prayer Facility</h3>
+                <p class="w-2/2">The University provides a number of dedicated spaces for prayer and reflection on campus.</p>
+            </div>
+            <div class="space-y-6">
+                <div class="radial-progress" style="--value:87;" role="progressbar">87%</div>
+                <h3>Prayer Facility</h3>
+                <p class="w-2/2">The University provides a number of dedicated spaces for prayer and reflection on campus.</p>
+            </div>
+        </section>
+        <section class="text-center justify-center items-center border-t-2 border-b-2 border-gray-300 p-9 border-dotted ">
+            <h1 class="text-4xl text-black font-extrabold">Program Sections</h1>
+            <p class="text-base font-medium pt-6 w-3/2 lg:w-1/2 text-center mx-auto">Discover Hockey Canada's range of development programs and drills intended to make the game fun. </p>
+        </section>
+        <section>
+            <div>
+                <div>
+                    <img src="Images/5.png" alt="">
+                </div>
+            </div>
+        </section>
 
     </main>
-    <footer>
+    <footer class="bg-black">
+        <section class="max-w-[1170px] mx-auto">
+
+        </section>
 
     </footer>
-    
+
 </body>
+
 </html>
