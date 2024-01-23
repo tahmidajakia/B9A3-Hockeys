@@ -21,7 +21,7 @@
 
 <body>
     <header class="max-w-[1170px] mx-5 lg:mx-auto font-manrope">
-        <nav>
+        <nav class="mb-8">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -41,7 +41,7 @@
                             <li><a>Contact</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-xl">Hockey’s</a>
+                    <a class="btn btn-ghost text-4xl font-extrabold">Hockey<span class="text-red-500">’</span>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -54,7 +54,7 @@
                 </div>
                 <div class="navbar-end space-x-5">
                     <img class="hidden lg:block" src="Images/Frame.svg" alt="">
-                    <a class="py-4 px-5 rounded-md bg-red-500 text-white">Get Ticket</a>
+                   <button class="bg-red-500 text-white py-3 px-6 rounded-lg">Get Ticket</button>
                 </div>
             </div>
         </nav>
@@ -86,26 +86,26 @@
         </section>
         <section class="grid grid-cols-1 lg:grid-cols-4 text-center mt-16 mb-16">
             <div class="space-y-6">
-                <div class="radial-progress" style="--value:87;" role="progressbar">87%</div>
-                <h3>Prayer Facility</h3>
+                <div class="radial-progress  text-red-500" style="--value:87;" role="progressbar">87%</div>
+                <h3 class="font-semibold text-xl text-black">Prayer Facility</h3>
                 <p class="w-2/2">The University provides a number of dedicated spaces for prayer and reflection on
                     campus.</p>
             </div>
             <div class="space-y-6">
-                <div class="radial-progress" style="--value:87;" role="progressbar">87%</div>
-                <h3>Prayer Facility</h3>
+                <div class="radial-progress text-green-500" style="--value:95;" role="progressbar">95%</div>
+                <h3 class="font-semibold text-xl text-black">Experienced Coach</h3>
                 <p class="w-2/2">The University provides a number of dedicated spaces for prayer and reflection on
                     campus.</p>
             </div>
             <div class="space-y-6">
-                <div class="radial-progress" style="--value:87;" role="progressbar">87%</div>
-                <h3>Prayer Facility</h3>
+                <div class="radial-progress text-orange-400" style="--value:90;" role="progressbar">90%</div>
+                <h3 class="font-semibold text-xl text-black">Senior Player</h3>
                 <p class="w-2/2">The University provides a number of dedicated spaces for prayer and reflection on
                     campus.</p>
             </div>
             <div class="space-y-6">
-                <div class="radial-progress" style="--value:87;" role="progressbar">87%</div>
-                <h3>Prayer Facility</h3>
+                <div class="radial-progress text-blue-500" style="--value:80;" role="progressbar">80%</div>
+                <h3 class="font-semibold text-xl text-black">Training Ground</h3>
                 <p class="w-2/2">The University provides a number of dedicated spaces for prayer and reflection on
                     campus.</p>
             </div>
@@ -357,8 +357,8 @@
         <h1 class="text-4xl text-black font-extrabold">Clients Question</h1>
         <p class="text-base font-medium pt-6 w-3/2 lg:w-1/2 text-center mx-auto">In this guide, we’re going to provide steps and examples for 12 effective ways to promote a new service or product. </p>
     </section>
-    <section class="flex mb-16">
-        <div class="space-y-6 border-2 border-gray-300 rounded-lg lg:p-10 p-6">
+    <section class="lg:flex mb-16 gap-6">
+        <div class="space-y-6 border-2 border-gray-300 rounded-lg lg:p-8 p-1">
             <div class="card w-96 bg-green-50 p-2">
                 <div class="card-body space-y-8 ">
                     <img class="w-12" src="Images/Group 1171275317.png" alt="">
@@ -393,8 +393,58 @@
                 </div>
               </div>
         </div>
+       <div>
+        <div class="">
+            <div class="">
+              <div class="">
+                <form class="">
+                  <div class="lg:flex gap-7 ">
+                    <div>
+                        <label class="label">
+                            <span class="label-text font-bold text-xl">Your Name</span>
+                          </label>
+                          <input class="bg-slate-50 py-6 rounded-xl pr-44 lg:pr-28 pl-6" type="name" placeholder="Enter your full name" class="input input-bordered" required />
+                    </div>
+                    <div>
+                        <label class="label">
+                            <span class="label-text font-bold text-xl">Your Email</span>
+                          </label>
+                          <input class="bg-slate-50 py-6 rounded-xl pr-44 lg:pr-28 pl-6" type="email" placeholder="Enter your email" class="input input-bordered" required />
+                    </div>
+                  </div>
+                  <div class="lg:flex gap-7 pt-8">
+                    <div>
+                        <label class="label">
+                            <span class="label-text font-bold text-xl">Subject</span>
+                          </label>
+                          <input class="bg-slate-50 py-6 rounded-xl pr-44 lg:pr-28 pl-6" type="subject" placeholder="Enter your subject" class="input input-bordered" required />
+                    </div>
+                    <div class="">
+                        <label class="label">
+                            <span class="label-text font-bold text-xl">Phone Number</span>
+                          </label>
+                          <input class="bg-slate-50 py-6 rounded-xl pr-44 lg:pr-28 pl-6" type="phone number" placeholder="Enter your phone number" class="input input-bordered" required />
+                    </div>
+                  </div>
+                  <div class="form-control pt-8 pb-5">
+                    <label class="label">
+                      <span class="label-text font-bold text-xl">Message</span>
+                    </label>
+                    <input class="bg-slate-50 py-6 pb-96 rounded-xl pr-28 pl-6" type="message" placeholder="Write your message" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button class="btn bg-red-500 rounded-xl pt-2 pb-2 text-white">Send Message</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+        
     </section>
-    <section class="bg-pink-50 py-8 rounded-xl text-center justify-center items-center space-y-5">
+    <section class="bg-pink-50 py-8 rounded-xl text-center justify-center items-center space-y-5 mb-16">
         <h2 class="text-black font-extrabold text-2xl">Social Media</h2>
         <div class="flex gap-4 items-center justify-center ">
             <img class="w-5" src="Images/twitter (1).svg" alt="">
@@ -405,8 +455,90 @@
     </section>
 
     </main>
-    <footer class="bg-black">
+    <footer class="bg-black font-manrope mb-16">
         <section class="max-w-[1170px] mx-auto">
+            <footer class="footer p-10 text-white text-base-content gap-36 justify-center items-center pt-20 pb-28 ">
+                
+                <aside>
+                    <h2 class="text-3xl font-extrabold">Get In Touch</h2>
+                  <p class="font-medium text-base opacity-70">Dit amet consectetur. Condimentum <br> adipiscing aliquam turpis placerat dolor. Purus <br> urna in sit nullam proin. </p>
+                  <div>
+                    <img  src="" alt="">
+                    <h3 class="opacity-70">hockeys@support.com</h3>
+                  </div>
+                  <div>
+                    <h3 class="opacity-70">(+62) 123-321-543</h3>
+                  </div>
+                </aside> 
+                <nav class="">
+                    <header class=" text-white text-lg font-bold ">Company</header> 
+                    <a class="link link-hover opacity-70">About us <br></a>
+                    <a class="link link-hover opacity-70">Leadership <br></a>
+                    <a class="link link-hover opacity-70">Careers <br></a>
+                    <a class="link link-hover opacity-70">News @ Article <br></a>
+                    <a class="link link-hover opacity-70">Legal Notice</a>
+                  </nav> 
+                  <nav>
+                    <header class="text-white text-lg font-bold">Support</header> 
+                    <a class="link link-hover opacity-70">Help Center <br></a>
+                    <a class="link link-hover opacity-70">FAQ <br></a>
+                    <a class="link link-hover opacity-70">Ticket Support <br></a>
+                    <a class="link link-hover opacity-70">Contact Us <br></a>
+                  </nav>
+                <nav>
+                  <header class="text-white text-lg font-bold">Services</header> 
+                  <a class="link link-hover opacity-70">Academy</a>
+                  <a class="link link-hover opacity-70">Group Lession</a>
+                  <a class="link link-hover opacity-70">Private Lession</a>
+                  <a class="link link-hover opacity-70">Hockeys for Kids</a>
+                  <a class="link link-hover opacity-70">Hockeys for Adults</a>
+                </nav>
+              </footer>
+
+        </section>
+
+    </footer>
+    <footer class="bg-black font-manrope text-white p-10 lg:pt-16 lg:pb-24">
+        <section class="max-w-[1170px] mx-auto">
+            <div class="lg:flex space-y-14 lg:space-y-1  lg:gap-40 ">
+                <div class="space-y-4">
+                    <h2 class="text-3xl font-extrabold text-white">Get In Touch</h2>
+                    <p class="font-medium text-base text-white opacity-45">Dit amet consectetur. Condimentum <br> adipiscing aliquam turpis placerat dolor. Purus <br> urna in sit nullam proin. </p>
+                    <div>
+                      <img  src="" alt="">
+                      <h3 class=" text-white opacity-45">hockeys@support.com</h3>
+                    </div>
+                    <div>
+                      <h3 class=" text-white opacity-45">(+62) 123-321-543</h3>
+                    </div>
+                </div>
+                <div class="flex gap-20 lg:gap-40">
+                    <div class="space-y-4">
+                        <header class=" text-white text-lg font-bold ">Company</header> 
+                    <a class="link link-hover opacity-45">About us <br></a>
+                    <a class="link link-hover opacity-45">Leadership <br></a>
+                    <a class="link link-hover opacity-45">Careers <br></a>
+                    <a class="link link-hover opacity-45">News @ Article<br></a>
+                    <a class="link link-hover opacity-45">Legal Notice</a>
+                    </div>
+                    <div>
+                        <header class="text-white text-lg font-bold">Support</header> 
+                    <a class="link link-hover opacity-45">Help Center <br></a>
+                    <a class="link link-hover opacity-45">FAQ <br></a>
+                    <a class="link link-hover opacity-45">Ticket Support <br></a>
+                    <a class="link link-hover opacity-45">Contact Us <br></a>
+                    </div>
+                </div>
+                <div class="space-y-5">
+                    <header class="text-white text-lg font-bold">Services</header> 
+                    <a class="link link-hover opacity-45">Academy <br></a>
+                    <a class="link link-hover opacity-45">Group Lession <br></a>
+                    <a class="link link-hover opacity-45">Private Lession <br></a>
+                    <a class="link link-hover opacity-45">Hockeys for Kids <br></a>
+                    <a class="link link-hover opacity-45">Hockeys for Adults</a>
+                </div>
+            </div>
+           
 
         </section>
 
